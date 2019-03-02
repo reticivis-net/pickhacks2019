@@ -46,11 +46,12 @@ include '../header.php';
     <title>Main Page</title>
 
     <!-- Bootstrap CSS CDN -->
-    <!-- Our Custom CSS -->
     <!--<link rel="stylesheet" href="style.css">-->
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
@@ -122,20 +123,44 @@ include '../header.php';
             <li>Do you have any history of the following medical conditions? (Check all that apply)
                 <br>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input0" name="0">
-                    <label class="custom-control-label" for="input0">Check this custom checkbox</label>
+                    <input type="checkbox" class="custom-control-input" id="input0" name="0" value="1">
+                    <label class="custom-control-label" for="input0">Immunilogical Condition</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input1" name="1">
-                    <label class="custom-control-label" for="input1">Check this custom checkbox</label>
+                    <input type="checkbox" class="custom-control-input" id="input1" name="1" value="1">
+                    <label class="custom-control-label" for="input1">Menstrual Function</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input2" name="2">
-                    <label class="custom-control-label" for="input2">Check this custom checkbox</label>
+                    <input type="checkbox" class="custom-control-input" id="input2" name="2" value="1">
+                    <label class="custom-control-label" for="input2">Bone Health problems</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input3" name="3">
-                    <label class="custom-control-label" for="input3">Check this custom checkbox</label>
+                    <input type="checkbox" class="custom-control-input" id="input3" name="3" value="1">
+                    <label class="custom-control-label" for="input3">Endocrine problems</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input4" name="4" value="1">
+                    <label class="custom-control-label" for="input4">Metabolic problems</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input5" name="5" value="1">
+                    <label class="custom-control-label" for="input5">Hermatological problems</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input6" name="6" value="1">
+                    <label class="custom-control-label" for="input6">Abnormal growth</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input7" name="7" value="1">
+                    <label class="custom-control-label" for="input7">Psychological problems</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input8" name="8" value="1">
+                    <label class="custom-control-label" for="input8">Cardiovascular problems</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input9" name="9" value="1">
+                    <label class="custom-control-label" for="input9">Gastrointestinal problems</label>
                 </div>
             </li>
             <li>Have you ever experienced unexpected decreased endurance performace?
