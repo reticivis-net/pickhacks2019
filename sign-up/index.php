@@ -43,7 +43,8 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
                     $num_rows = $result->num_rows;
                 }
                 // insert into DB
-                $result = $conn->query("INSERT INTO users (globalid, username, email, firstname, lastname, password) VALUES ('$globalid', '$username', '$email', '$first_name', '$last_name', '$hashed_pw')");
+                $userdata = '{"finished":"false"}';
+                $result = $conn->query("INSERT INTO users (globalid, username, email, firstname, lastname, password, userdata) VALUES ('$globalid', '$username', '$email', '$first_name', '$last_name', '$hashed_pw', '$userdata')");
                 if ($result === TRUE) { // if the DB insertion worked successfully
                     $message = "Your account is almost ready! Go to the sign in page to sign into your account and complete the final step!";
                     $type = "success";

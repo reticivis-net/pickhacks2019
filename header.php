@@ -1,9 +1,9 @@
 <?php
 if(!isset($title)) {
-    $title = "nnthingy";
+    $title = "asobey";
 }
 if(!isset($desc)) {
-    $desc = "nnthingy";
+    $desc = "asobey";
 }
 if (!isset($root)) {
     $root = $_SERVER['DOCUMENT_ROOT'];
