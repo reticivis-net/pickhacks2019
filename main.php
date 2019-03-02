@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+if isset($_POST['finished']) {
+  if 1_yellow1 = "1_yellow1"
+}
+?>
 <html>
 
 <head>
@@ -20,7 +25,7 @@
 
 <body>
 
-  <form action="/complete.php" method="POST">
+  <form method="POST">
     <ul>
       <li>Do you have any history of the following medical conditions?<br>
         <input type="checkbox" name="1_yellow1" value="1_yellow1"> Immunilogical Condition<br>
@@ -74,7 +79,7 @@
         <input type="radio" name="2_orange2" value="2_orange2"> Yes
         <input type="radio" name="2_orange2" value="2_orange2"> No<br>
       </li>
-      <input type="submit">
+      <input name="finished" type="submit">
   </ul>
   </form>
 
