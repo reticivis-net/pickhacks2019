@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<?php
-if isset($_POST['finished']) {
-  if 1_yellow1 -
-}
-?>
 <html>
 
 <head>
@@ -25,7 +20,7 @@ if isset($_POST['finished']) {
 
 <body>
 
-  <form method="POST">
+  <form action="./complete.php" method="POST">
     <ul>
       <li>Do you have any history of the following medical conditions?<br>
         <input type="checkbox" name="1_yellow1" value="1_yellow1"> Immunilogical Condition<br>
