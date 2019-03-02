@@ -1,0 +1,162 @@
+.row {
+    margin:auto;
+}
+.sticky {
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+.navitem {
+    color:white;
+}
+.navline {
+    height: 5px;
+    width: 0;
+    background-color: #fff;
+    margin: auto;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+.navitem:hover + .navline {
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    width:100%;
+}
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.navigation li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navigation li a:hover {
+    text-decoration: none;
+    color:#ddd;
+}
+.navigation li a:active {
+    text-decoration: none;
+    color:#ddd;
+}
+.active {
+    color:#fff;
+}
+.navline-active {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+}
+#headerline {
+    height: 10px;
+    width: 70%;
+    background-color: #fff;
+    margin: auto;
+}
+.no-a-style {
+    color:white;
+}
+.no-a-style:hover {
+    text-decoration: none;
+    color:grey;
+}
+.navheader {
+    color:white;
+    padding-right: 10px;
+    font-size:25px;
+    font-family: Quicksand-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer {
+    text-align: center;
+    color: lightgrey;
+    font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer-bold {
+    font-family: Quicksand-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.portfolio-header {
+    color:white;
+}
+.body p {
+    font-size:18px;
+}
+.vertical-align2 {
+    position: relative;
+    top: 0;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.nav-container {
+    background:black;
+}
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.portfolio-header {
+    height:100vh;
+    min-height: 315px;
+    min-width: 450px;
+}
+.portfolio-header .h1 {
+    font-size: 75pt;
+}
+.portfolio-header .h2 {
+    font-size: 30pt;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hoverout {
+    outline: solid 0 #fff;
+    transition: outline-width 0.25s ease-out;
+    cursor: pointer;
+}
+.hoverout:hover {
+    outline-width: 6px;
+}
+.category {
+    margin:15px;
+}
+/* modal dark theme  */
+.modal-body {
+    background: #40464B;
+}
+.modal-header, .modal-footer {
+    background: #2D3032;
+}
+.modal-content {
+    color:white;
+}
+.gallery {
+    width:50%;
+}
+.quicksand-bold {
+    font-family: Quicksand-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.quicksand {
+    font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.btn-xl {
+    font-size: 40px !important;
+    margin:20px;
+}
