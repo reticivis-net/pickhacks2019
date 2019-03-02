@@ -45,9 +45,8 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
 <body>
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
     <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">
-        <!--<img src="/data/full name.png" alt="logo" style="height:40px;">-->
-        <h2>asobey</h2>
+    <a class="navbar-brand" href="/">
+        <img src="/data/cropped.png" alt="logo" style="height:40px;">
     </a>
 
     <!-- Links -->
