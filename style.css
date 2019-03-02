@@ -1,19 +1,4 @@
 ul{
-  font-size: 24px;
-  list-style-type: none;
-  margin: 30px 0;
-}
-
-input[type=checkbox] {
-  transform: scale(1.5);
-}
-input[type=radio] {
-  transform: scale(1.5);
-}
-
-form-list-item{
-  color: #CC9900;
-  font-size: 24px;
   list-style-type: none;
   margin: 30px 0;
 }
