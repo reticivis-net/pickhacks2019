@@ -28,25 +28,24 @@ if (isset($_POST['finished'])) {
         $var3 = $last_line[2];
         $var4 = $last_line[3];
         $var5 = $last_line[4];
-        if $var5 == 1 {
+        if ($var5 == 1) {
             $_SESSION['probability'] = 'absolute';
         }
-        elseif $var4 == 1 {
+        elseif ($var4 == 1) {
             $_SESSION['probability'] = 'high';
         }
-        elseif $var3 == 1{
+        elseif ($var3 == 1){
             $_SESSION['probability'] = 'medium';
         }
-        elseif $var2 == 1 {
+        elseif ($var2 == 1) {
             $_SESSION['probability'] = 'low';
         }
-        elseif $var1 == 1 {
+        elseif ($var1 == 1) {
             $_SESSION['probability'] = 'none';
         }
         echo '<meta http-equiv="Refresh" CONTENT="0; URL=/results">';
         
     }
-include '../header.php';
 ?>
 <html lang="en">
 
@@ -64,10 +63,39 @@ include '../header.php';
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <?php include '../header.php';?>
 </head>
 
 <body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="/">
+            <img src="/data/cropped.png" alt="logo" style="height:40px;">
+        </a>
 
+        <!-- Links -->
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign-in">Sign In</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign-in"><button type="button" class="btn btn-primary">Sign In</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
 <form method="POST" id="questionnaire" onsubmit="load()">
     <!--
     <form method="POST" id="questionnaire" onsubmit="load()">
@@ -246,7 +274,7 @@ include '../header.php';
             <br>
             <button name ='finished' type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
                 Submit
-            </button>
+            </button><br>
         </ul>
 </form>
     </div>
