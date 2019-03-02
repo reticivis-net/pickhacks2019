@@ -30,15 +30,13 @@ if (isset($_POST[0])) {
     $userdata = [];
     $userdata["finished"] = "true";
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
-    echo $email;
-    echo $userdata;
     $result = $conn->query("UPDATE users SET userdata = '$userdata' WHERE email='$email'");
-    echo $result;
-    //if ($result === TRUE) { // if the DB insertion worked successfully
-        //var_dump($symptomQuestions);
-        //echo '<br>';
-        //var_dump($medicalQuestions);
-    }//}
+    if ($result === TRUE) { // if the DB insertion worked successfully
+        header("Location: ./");
+    } else {
+        echo "error whoops";
+    }
+}
 include '../header.php';
 ?>
 <html lang="en">
