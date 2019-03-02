@@ -169,3 +169,12 @@ html {
     font-size: 40px !important;
     margin:20px;
 }
+#sign-in{
+    background-image: url('LibraryTransparent.png');
+    height: 70px;
+    width: 120px;
+}
+
+#sign-in:hover {
+    background-image: url('LibraryHoverTrans.png');
+}

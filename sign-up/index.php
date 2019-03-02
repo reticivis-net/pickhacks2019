@@ -1,4 +1,10 @@
 <?php
+session_start();
+if ( isset( $_SESSION['email'] ) ) {
+    header("Location: /portal");
+} else {
+
+
 if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST['last_name']) && !empty($_POST['last_name']) AND isset($_POST['last_name']) && !empty($_POST['last_name']) AND isset($_POST['email']) && !empty($_POST['email']) AND isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['password_confirmation']) && !empty($_POST['password_confirmation']) AND isset($_POST['username']) && !empty($_POST['username'])){
     function random10() {
         $number = "";
@@ -166,3 +172,4 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
     </div>
     </body>
     </html>
+<?php } ?>
