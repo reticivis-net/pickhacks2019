@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">
 </head>
 <body>
-<div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('https://www.wonderplugin.com/videos/demo-image0.jpg');">
+<div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('data/oui.png');">
         <span class="vertical-align2 animated fadeIn">
-            <br><br>
-            <span class="h1 quicksand-bold">nnthingy</span>
             <br>
-            <span class="h2 quicksand">this is ok</span>
+            <img alt="icon" src="/data/cropped.png" width="50%">
+            <br>
+            <span class="h2 quicksand">a synthetic organic brain exploring you</span>
             <br>
             <a class="no-a-style" href="#start"><span class="h1 animated fadeInUp delay-1s slow"><i class="fas fa-angle-down"></i></span></a>
         </span>
