@@ -32,7 +32,7 @@ if (isset($_POST[0])) {
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
     $result = $conn->query("UPDATE users SET userdata = '$userdata' WHERE email='$email'");
     if ($result === TRUE) { // if the DB insertion worked successfully
-        header("Location: ./");
+        header("Location: ../");
     } else {
         echo "error whoops";
     }
