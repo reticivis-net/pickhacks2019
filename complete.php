@@ -1,4 +1,4 @@
 <html>
 <p>
-Hello:<?php echo $_POST["1_yellow1"]; ?>
+Hello:<?php echo $_POST["0"]; ?>
 </html>
