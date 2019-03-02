@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <?php
-session_start();
-include '../dbconnect.php';
-$email = $_SESSION['email'];
-$result = $conn->query("SELECT userdata FROM users WHERE email = '$email'");
-$userdata = mysqli_fetch_assoc($result)['userdata'];
-if ($userdata === "") {
-    $userdata = '{"finished": "false"}';
-}
-$userdata = json_decode($userdata, true);
-if ($userdata["finished"] === "true") {
-    header("Location: ./");
-} else {
-if (isset($_POST[0])) {
-    $medicalQuestions = [];
-    $lm = 4;
-    for ($i = 0; $i < $lm; $i++) {
-        if(isset($_POST[$i])) {
-            $medicalQuestions[$i] = 1;
-        }
-        else $medicalQuestions[$i] = 0;
-    }
-
+if (isset($_POST['finished'])) {
+//echo 'sdf';
     $symptomQuestions = [];
-    $ls = 3;
+    $ls = 10;
     for ($i = 0; $i < $ls; $i++) {
-        $symptomQuestions[$i] = $_POST[$i + $lm];
+        $symptomQuestions[$i] = $_POST[$i + 10];
     }
-    $userdata = [];
-    $userdata["finished"] = "true";
-    $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
-    $result = $conn->query("UPDATE users SET userdata = '$userdata' WHERE email='$email'");
-    if ($result === TRUE) { // if the DB insertion worked successfully
-        header("Location: ../");
-    } else {
-        echo "error whoops";
+        $num1 = $symptomQuestions[0];
+        $num2 = $symptomQuestions[1];
+        $num3 = $symptomQuestions[2];
+        $num4 = $symptomQuestions[3];
+        $num5 = $symptomQuestions[4];
+        $num6 = $symptomQuestions[5];
+        $num7 = $symptomQuestions[6];
+        $num8 = $symptomQuestions[7];
+        $num9 = $symptomQuestions[8];
+        $num10 = $symptomQuestions[9];
+ 
+        $last_line = system('python C:/xampp/htdocs/pickhacks2019/NeuralNetwork.py "r" "10" "'.$num1.'" "'.$num2.'" "'.$num3.'" "'.$num4.'" "'.$num5.'" "'.$num6.'" "'.$num7.'" "'.$num8.'" "'.$num9.'" "'.$num10.'"', $retval);
+        //var_dump($last_line);
     }
-}
 include '../header.php';
 ?>
 <html lang="en">
@@ -123,49 +107,7 @@ include '../header.php';
         <h1>Welcome to asobey.</h1>
         <h3>Please fill out the form below.</h3>
         <ul class="list-group">
-            <li class="list-group-item">Do you have any history of the following medical conditions? (Check all that apply)
-                <br>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input0" name="0" value="1">
-                    <label class="custom-control-label" for="input0">Immunilogical Condition</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input1" name="1" value="1">
-                    <label class="custom-control-label" for="input1">Menstrual Function</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input2" name="2" value="1">
-                    <label class="custom-control-label" for="input2">Bone Health problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input3" name="3" value="1">
-                    <label class="custom-control-label" for="input3">Endocrine problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input4" name="4" value="1">
-                    <label class="custom-control-label" for="input4">Metabolic problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input5" name="5" value="1">
-                    <label class="custom-control-label" for="input5">Hermatological problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input6" name="6" value="1">
-                    <label class="custom-control-label" for="input6">Abnormal growth</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input7" name="7" value="1">
-                    <label class="custom-control-label" for="input7">Psychological problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input8" name="8" value="1">
-                    <label class="custom-control-label" for="input8">Cardiovascular problems</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="input9" name="9" value="1">
-                    <label class="custom-control-label" for="input9">Gastrointestinal problems</label>
-                </div>
-            </li>
+            
             <li class="list-group-item">Have you ever experienced unexpected decreased endurance performace?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -277,23 +219,15 @@ include '../header.php';
                 </div>
             </li>
             <br>
-            <button type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
+            <button name ='finished' type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
                 Submit
             </button>
         </ul>
 </form>
     </div>
 
-<script>
-    function load() {
-        let button = $("#button");
-        button.attr("disabled", "disabled");
-        button.html("Loading... <span class=\"sr-only\">Loading...</span><span class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>");
-        //$("#register").submit();
-    }
-</script>
 
 </body>
 
 </html>
-<?php } ?>
+<?php  ?>
