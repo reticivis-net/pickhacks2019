@@ -12,9 +12,7 @@ $userdata = json_decode($userdata, true);
 if ($userdata["finished"] === "true") {
     header("Location: ./");
 } else {
-
-
-if (isset($_POST)) {
+if (isset($_POST['finished'])) {
     $medicalQuestions = [];
     $lm = 4;
     for ($i = 0; $i < $lm; $i++) {
@@ -28,12 +26,14 @@ if (isset($_POST)) {
     for ($i = 0; $i < $ls; $i++) {
         $symptomQuestions[$i] = $_POST[$i + $lm];
     }
-    var_dump(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
-
-    //var_dump($symptomQuestions);
-    //echo '<br>';
-    //var_dump($medicalQuestions);
-}
+    var_dump($symptomQuestions);
+    $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
+    $result = $conn->query("INSERT INTO users (userdata) VALUES ('$userdata')");
+    //if ($result === TRUE) { // if the DB insertion worked successfully
+        //var_dump($symptomQuestions);
+        //echo '<br>';
+        //var_dump($medicalQuestions);
+    }//}
 include '../header.php';
 ?>
 <html>
