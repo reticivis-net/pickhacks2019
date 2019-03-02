@@ -131,25 +131,40 @@ def train(ilayers, hlayers, olayers):
     Neuron.alpha = 0.015
     while True:
         err = 0
-        inputs = [[0,0,0,0],[0,0,0,1],[0,0,1,0],[0,0,1,1],[0,1,0,0],[0,1,0,1],[0,1,1,0],[0,1,1,1],[1,0,0,0],[1,0,1,0],[1,0,1,1],[1,1,0,0],[1,1,0,1],[1,1,1,0],[1,1,1,1]]
-        outputs = [[1,1,1,1],[1,1,1,0],[1,1,0,1],[1,1,0,0],[1,0,1,1],[1,0,1,0],[1,0,0,1],[1,0,0,0],[0,1,1,1],[0,1,0,1],[0,1,0,0],[0,0,1,1],[0,0,1,0],[0,0,0,1],[0,0,0,0]]
+        inputs = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],[1, 1, 1, 1, 1, 1, 1, 1, 1, 0],[1, 1, 1, 1, 1, 1, 1, 1, 0, 1],[1, 1, 1, 1, 1, 1, 1, 0, 1, 1],[1, 1, 1, 1, 1, 1, 0, 1, 1, 1],
+                 [1, 1, 1, 1, 1, 0, 1, 1, 1, 1],[1, 1, 1, 1, 0, 1, 1, 1, 1, 1],[1, 1, 1, 0, 1, 1, 1, 1, 1, 1],[1, 1, 0, 1, 1, 1, 1, 1, 1, 1],[1, 0, 1, 1, 1, 1, 1, 1, 1, 1],[0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                 [1, 0, 1, 0, 0, 1, 1, 0, 1, 1],[1, 0, 1, 1, 0, 1, 0, 1, 1, 0],[1, 0, 1, 1, 0, 1, 1, 1, 0, 0],[0, 0, 0, 0, 1, 1, 1, 1, 1, 1],[0, 0, 0, 1, 1, 1, 1, 1, 1, 0],[0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+                 [0, 1, 1, 1, 1, 1, 1, 0, 0, 0],[1, 1, 1, 1, 1, 1, 0, 0, 0, 0],[1, 1, 1, 1, 1, 0, 0, 0, 0, 1],[1, 1, 1, 1, 0, 0, 0, 0, 1, 1],[1, 1, 1, 0, 0, 0, 0, 1, 1, 1],[1, 1, 0, 0, 0, 0, 1, 1, 1, 1],
+                 [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],[0, 0, 0, 0, 0, 0, 0, 1, 1, 1],[0, 0, 0, 0, 0, 0, 1, 1, 1, 0],[0, 0, 0, 0, 0, 1, 1, 1, 0, 0],[0, 0, 0, 0, 1, 1, 1, 0, 0, 0],[0, 0, 0, 1, 1, 1, 0, 0, 0, 0],
+                 [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],[0, 1, 1, 1, 0, 0, 0, 0, 0, 0],[1, 1, 1, 0, 0, 0, 0, 0, 0, 0],[1, 1, 0, 0, 0, 0, 0, 0, 0, 1],[1, 0, 0, 0, 0, 0, 0, 0, 1, 1],[0, 0, 0, 0, 0, 1, 0, 1, 0, 1],
+                 [0, 0, 0, 0, 1, 0, 1, 0, 1, 0],[0, 0, 0, 1, 0, 1, 0, 1, 0, 0],[0, 0, 1, 0, 1, 0, 1, 0, 0, 0],[0, 1, 0, 1, 0, 1, 0, 0, 0, 0],[1, 0, 1, 0, 1, 0, 0, 0, 0, 0],[0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+                 [1, 0, 1, 0, 0, 0, 0, 0, 1, 0]]
+        outputs = [[0,0,0,0,1],[1,0,0,0,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,0,1,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],
+                  [0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],
+                  [0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0]]
         for i in range(len(inputs)):
             net.setInput(inputs[i])
             net.feedForword()
             net.backPropagate(outputs[i])
             err = err + net.getError(outputs[i])
-        #print ("error: ", err)
-        if err < 0.1:
+        print ("error: ", err)
+        if err < 0.05:
             print('Training has finished!')
             testOsave = str(input('Test NN (t) or Save NN (s) or Delete NN (d): '))
             if testOsave == 'd':
                 break
             elif testOsave == 't':
-                a = int(input('First number: '))
-                b = int(input('Second number: '))
-                c = int(input('Third number: '))
-                d = int(input('Fourth number: '))
-                net.setInput([a, b, c, d])
+                a = int(input('First Number: '))
+                b = int(input('Second Number: '))
+                c = int(input('Third Number: '))
+                d = int(input('Fourth Number: '))
+                e = int(input('Fith Number: '))
+                f = int(input('Sixth Number: '))
+                g = int(input('Seventh Number: '))
+                h = int(input('Eighth Number: '))
+                i = int(input('Nineth Number: '))
+                j = int(input('Tenth Number: '))
+                net.setInput([a, b, c, d, e, f, g, h, i, j])
                 net.feedForword()
                 print (net.getThResults())
                 testRsave = str(input('Save NN (s) or Delete NN (d): '))
@@ -166,7 +181,13 @@ def run(filename):
     b = int(input('Second Number: '))
     c = int(input('Third Number: '))
     d = int(input('Fourth Number: '))
-    net.setInput([a, b, c, d])
+    e = int(input('Fith Number: '))
+    f = int(input('Sixth Number: '))
+    g = int(input('Seventh Number: '))
+    h = int(input('Eighth Number: '))
+    i = int(input('Nineth Number: '))
+    j = int(input('Tenth Number: '))
+    net.setInput([a, b, c, d, e, f, g, h, i, j])
     net.feedForword()
     print (net.getThResults())
 
@@ -176,7 +197,7 @@ def main():
     if runOrTrain == 'r':
         run('nn.p')
     elif runOrTrain == 't':
-        train(4,8,4)
+        train(10,18,5)
     else:
         print('Please say either r or t')
 
