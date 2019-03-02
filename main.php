@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if isset($_POST['finished']) {
-  if 1_yellow1 = "1_yellow1"
+  if 1_yellow1 -
 }
 ?>
 <html>
