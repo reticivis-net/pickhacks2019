@@ -36,8 +36,8 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
 <head>
     <?php
     $root = "..";
-    $title = "nnthingy - Sign In";
-    $desc = "Sign in to nnthingy";
+    $title = "asobey - Sign In";
+    $desc = "Sign in to asobey";
     include $root.'/header.php';
     ?>
     <title>priory.ml</title> <!-- fallback title -->
@@ -47,7 +47,7 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
     <!-- Brand/logo -->
     <a class="navbar-brand" href="#">
         <!--<img src="/data/full name.png" alt="logo" style="height:40px;">-->
-        <h2>nnthingy</h2>
+        <h2>asobey</h2>
     </a>
 
     <!-- Links -->
@@ -83,7 +83,7 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
         <?php
     }
     ?>
-    <h1>Sign in to nnthingy</h1>
+    <h1>Sign in to asobey</h1>
     <br>
     <form role="form" action="index.php" method="POST" id="signin" onsubmit="load()">
 
