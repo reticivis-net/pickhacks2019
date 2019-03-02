@@ -23,11 +23,11 @@ if (isset($_POST['finished'])) {
         if (!isset($_SESSION)) {
             session_start();
         }
-        $var1 = $last_line[0];
-        $var2 = $last_line[1];
-        $var3 = $last_line[2];
-        $var4 = $last_line[3];
-        $var5 = $last_line[4];
+        $var1 = $last_line[1];
+        $var2 = $last_line[4];
+        $var3 = $last_line[7];
+        $var4 = $last_line[10];
+        $var5 = $last_line[13];
         if ($var5 == 1) {
             $_SESSION['probability'] = 'absolute';
         }
@@ -42,6 +42,9 @@ if (isset($_POST['finished'])) {
         }
         elseif ($var1 == 1) {
             $_SESSION['probability'] = 'none';
+        }
+        else {
+            $_SESSION['probability'] = 'error';
         }
         echo '<meta http-equiv="Refresh" CONTENT="0; URL=/results">';
 
@@ -78,6 +81,15 @@ if (isset($_POST['finished'])) {
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign-in">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portal">Analyasis</a>
                 </li>
             </ul>
         </div>
