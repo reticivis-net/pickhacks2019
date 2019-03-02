@@ -9,7 +9,7 @@
     $desc = "Homepage.";
     include $root.'/header.php';
     ?>
-    <title>priory.ml</title>
+    <title>Asobey!</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="/static/aos.css" rel="stylesheet">
     <script src="/static/aos.js"></script>
