@@ -36,8 +36,8 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
 <head>
     <?php
     $root = "..";
-    $title = "priory.ml - Sign In";
-    $desc = "Sign in to priory.ml";
+    $title = "nnthingy - Sign In";
+    $desc = "Sign in to nnthingy";
     include $root.'/header.php';
     ?>
     <title>priory.ml</title> <!-- fallback title -->
@@ -56,18 +56,18 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
             <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Sign Up</a>
-            </li>
             <li class="nav-item">
-                <a class="nav-link" href="/sign-in">Sign In</a>
+                <a class="nav-link" href="/sign-up">Sign Up</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Sign In</a>
             </li>
         </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/sign-in"><button type="button" class="btn btn-primary">Sign In</button></a>
+                <a class="nav-link" href="/sign-up"><button type="button" class="btn btn-success">Sign Up</button></a>
             </li>
         </ul>
     </div>
@@ -83,7 +83,7 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
         <?php
     }
     ?>
-    <h1>Sign in to priory.ml</h1>
+    <h1>Sign in to nnthingy</h1>
     <br>
     <form role="form" action="index.php" method="POST" id="signin" onsubmit="load()">
 
