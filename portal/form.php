@@ -12,8 +12,6 @@ $userdata = json_decode($userdata, true);
 if ($userdata["finished"] === "true") {
     header("Location: ./");
 } else {
-
-
 if (isset($_POST['finished'])) {
     $medicalQuestions = [];
     $lm = 4;
@@ -31,14 +29,11 @@ if (isset($_POST['finished'])) {
     var_dump($symptomQuestions);
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
     $result = $conn->query("INSERT INTO users (userdata) VALUES ('$userdata')");
-        if ($result === TRUE) { // if the DB insertion worked successfully
-
-
-
-    //var_dump($symptomQuestions);
-    //echo '<br>';
-    //var_dump($medicalQuestions);
-}}
+    //if ($result === TRUE) { // if the DB insertion worked successfully
+        //var_dump($symptomQuestions);
+        //echo '<br>';
+        //var_dump($medicalQuestions);
+    }//}
 include '../header.php';
 ?>
 <html>
@@ -61,6 +56,65 @@ include '../header.php';
 <body>
 
 <form method="POST" id="questionnaire" onsubmit="load()">
+    <!--
+    <form method="POST" id="questionnaire" onsubmit="load()">
+    <ul>
+      <li>Do you have any history of the following medical conditions?<br>
+        <input type="checkbox" name="0" value="1"> Immunilogical Condition<br>
+        <input type="checkbox" name="1" value="1"> Menstrual Function<br>
+        <input type="checkbox" name="2" value="1"> Bone Health problems<br>
+        <input type="checkbox" name="3" value="1"> Endocrine problems<br>
+        <input type="checkbox" name="4" value="1"> Metabolic<br>
+        <input type="checkbox" name="5" value="1"> Hermatological problems<br>
+        <input type="checkbox" name="6" value="1"> Abnormal growth<br>
+        <input type="checkbox" name="7" value="1"> Psychological problems<br>
+        <input type="checkbox" name="8" value="1"> Cardiovascular problems<br>
+        <input type="checkbox" name="9" value="1"> Gastrointestinal problems<br><br>
+      </li>
+      <li>Have you ever experienced unexpected decreased endurance performace?
+        <input type="radio" name="10" value="1"> Yes
+        <input type="radio" name="10" value="0"> No<br>
+      </li>
+      <li>Do you receive injuries from seemingly harmless things?
+        <input type="radio" name="11" value="1"> Yes
+        <input type="radio" name="11" value="0"> No<br>
+      </li>
+      <li>Have you been receiving less benefeit from exercise?
+        <input type="radio" name="12" value="1"> Yes
+        <input type="radio" name="12" value="0"> No<br>
+      </li>
+      <li>Have you experienced unusual impaired judgement?
+        <input type="radio" name="13" value="1"> Yes
+        <input type="radio" name="13" value="0"> No<br>
+      </li>
+      <li>Have you encountered decreased coordination?
+        <input type="radio" name="14" value="1"> Yes
+        <input type="radio" name="14" value="0"> No<br>
+      </li>
+      <li>Have you encountered decreased concentration?
+        <input type="radio" name="15" value="1"> Yes
+        <input type="radio" name="15" value="0"> No<br>
+      </li>
+      <li>Have you been easily irratible lately?
+        <input type="radio" name="16" value="1"> Yes
+        <input type="radio" name="16" value="0"> No<br>
+      </li>
+      <li>Have you experienced signs of depression lately?
+        <input type="radio" name="17" value="1"> Yes
+        <input type="radio" name="17" value="0"> No<br>
+      </li>
+      <li>Have you become easily tired recently?
+        <input type="radio" name="18" value="1"> Yes
+        <input type="radio" name="18" value="0"> No<br>
+      </li>
+      <li>Have you become noticeably weak lately?
+        <input type="radio" name="19" value="1"> Yes
+        <input type="radio" name="19" value="0"> No<br>
+      </li>
+      <input name="finished" type="submit">
+  </ul>
+  </form>
+  -->
     <div class="container">
         <h1>Welcome to asobey.</h1>
         <h3>Please fill out the form below.</h3>
@@ -118,7 +172,7 @@ include '../header.php';
                 </div>
             </li>
             <br>
-            <button name="finished" type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
+            <button type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
                 Submit
             </button>
         </ul>
