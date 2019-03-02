@@ -43,6 +43,9 @@ if (isset($_POST['finished'])) {
         elseif ($var1 == 1) {
             $_SESSION['probability'] = 'none';
         }
+        else {
+            $_SESSION['probability'] = 'none';
+        }
         echo '<meta http-equiv="Refresh" CONTENT="0; URL=/results">';
         
     }
@@ -84,6 +87,9 @@ if (isset($_POST['finished'])) {
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/sign-in">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portal">Analyasis</a>
                 </li>
             </ul>
         </div>

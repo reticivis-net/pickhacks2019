@@ -99,6 +99,9 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
                 <li class="nav-item">
                     <a class="nav-link" href="/sign-in">Sign In</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portal">Analyasis</a>
+                </li>
             </ul>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">

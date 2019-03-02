@@ -61,6 +61,9 @@ if(isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['ema
             <li class="nav-item active">
                 <a class="nav-link" href="#">Sign In</a>
             </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="/portal">Analyasis</a>
+                </li>
         </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
