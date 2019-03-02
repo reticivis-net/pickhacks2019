@@ -169,34 +169,111 @@ include '../header.php';
             <li>Have you ever experienced unexpected decreased endurance performace?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input4yes" name="4" class="custom-control-input" value="yes" required>
-                    <label class="custom-control-label" for="input4yes">Yes</label>
+                    <input type="radio" id="input10yes" name="10" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input10yes">Yes</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input4no" name="4" class="custom-control-input" value="no" required>
-                    <label class="custom-control-label" for="input4no">No</label>
-                </div>
-            </li>
-            <li>question 2
-                <br>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input5yes" name="5" class="custom-control-input" value="yes" required>
-                    <label class="custom-control-label" for="input5yes">Yes</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input5no" name="5" class="custom-control-input" value="no" required>
-                    <label class="custom-control-label" for="input5no">No</label>
+                    <input type="radio" id="input10no" name="10" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input10no">No</label>
                 </div>
             </li>
-            <li>question 3
+            <li>Do you receive injuries from seemingly harmless things?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input6yes" name="6" class="custom-control-input" value="yes" required>
-                    <label class="custom-control-label" for="input6yes">Yes</label>
+                    <input type="radio" id="input11yes" name="11" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input11yes">Yes</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="input6no" name="6" class="custom-control-input" value="no" required>
-                    <label class="custom-control-label" for="input6no">No</label>
+                    <input type="radio" id="input11no" name="11" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input11no">No</label>
+                </div>
+            </li>
+            <li>Have you been receiving less benefeit from exercise?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input12yes" name="12" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input12yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input12no" name="12" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input12no">No</label>
+                </div>
+            </li>
+            <li>Have you experienced unusual impaired judgement?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input13yes" name="13" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input13yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input13no" name="13" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input13no">No</label>
+                </div>
+            </li>
+            <li>Have you encountered decreased coordination?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input14yes" name="14" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input14yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input14no" name="14" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input14no">No</label>
+                </div>
+            </li>
+            <li>Have you encountered decreased concentration?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input15yes" name="15" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input15yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input15no" name="15" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input15no">No</label>
+                </div>
+            </li>
+            <li>Have you been easily irratible lately?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input16yes" name="16" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input16yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input16no" name="16" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input16no">No</label>
+                </div>
+            </li>
+            <li>Have you experienced signs of depression lately?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input17yes" name="17" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input17yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input17no" name="17" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input17no">No</label>
+                </div>
+            </li>
+            <li>Have you become easily tired recently?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input18yes" name="18" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input18yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input18no" name="18" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input18no">No</label>
+                </div>
+            </li>
+            <li>Have you become noticeably weak lately?
+                <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input19yes" name="19" class="custom-control-input" value="1" required>
+                    <label class="custom-control-label" for="input19yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="input19no" name="19" class="custom-control-input" value="0" required>
+                    <label class="custom-control-label" for="input19no">No</label>
                 </div>
             </li>
             <br>
