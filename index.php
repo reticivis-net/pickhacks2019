@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">
 </head>
 <body>
-<div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('<?php echo $root?>/data/homepage%20gradient.png');">
+<div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('https://www.wonderplugin.com/videos/demo-image0.jpg');">
         <span class="vertical-align2 animated fadeIn">
-            <img alt="icon" src="/data/icon%20hd.png" width="30%">
-            <br>
+            <br><br>
             <span class="h1 quicksand-bold">priory.ml</span>
             <br>
             <span class="h2 quicksand">A website made by a Priory student for Priory students</span>
@@ -58,4 +57,3 @@
 </script>
 </body>
 </html>
-<?php include "footer.php";?>
