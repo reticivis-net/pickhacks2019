@@ -156,11 +156,9 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
                     </div>
                 </div>
             </div>
-            <a href="/main">
             <button type="submit" form="register" value="Register" class="btn btn-info btn-block btn-lg" id="button">
                 Register
             </button>
-          </a>
         </form>
 
         <script>
