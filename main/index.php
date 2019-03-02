@@ -39,7 +39,11 @@ include 'header.php';
 
 <body>
 
+<<<<<<< HEAD:main/index.php
+  <form action="./complete.php" method="POST">
+=======
 <form method="POST" id="questionnaire" onsubmit="load()">
+>>>>>>> f5bcc557808c0eccedde353aead8597ce47dfdde:main.php
     <ul>
         <li>Do you have any history of the following medical conditions? (Check all that apply)
             <br>
