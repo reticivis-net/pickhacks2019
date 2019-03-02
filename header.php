@@ -18,6 +18,6 @@ if (!isset($root)) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- style/beanstrap -->
     <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <script src="/static/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="/static/popper.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>

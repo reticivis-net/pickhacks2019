@@ -12,7 +12,8 @@ $userdata = json_decode($userdata, true);
 if ($userdata["finished"] === "true") {
     header("Location: ../");
 } else {
-if (isset($_POST[0])) {
+if (isset($_POST)) {
+    echo "12";
     $medicalQuestions = [];
     $lm = 10;
     for ($i = 0; $i < $lm; $i++) {
@@ -32,7 +33,7 @@ if (isset($_POST[0])) {
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
     $result = $conn->query("UPDATE users SET userdata = '$userdata' WHERE email='$email'");
     if ($result === TRUE) { // if the DB insertion worked successfully
-        header("Location: ../");
+        header("Location: /portal/index.php");
     } else {
         echo "error whoops";
     }
@@ -280,6 +281,7 @@ include '../header.php';
             <button type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
                 Submit
             </button>
+            <br>
         </ul>
 </form>
     </div>

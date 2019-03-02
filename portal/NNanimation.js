@@ -316,9 +316,11 @@ function anim(){
         if (animation_height > 1) {
             opts.vanishPoint.y = ( h = c.height = ease(animation_height, animation_height2) ) / 2;
             animation_height -= 5;
-        } else {
+        } else if(animation_height !== 0.001) {
             animation_height = 0;
             opts.vanishPoint.y = ( h = c.height = animation_height ) / 2;
+            animateEach();
+            animation_height = 0.001;
         }
     }
     window.requestAnimationFrame( anim );
