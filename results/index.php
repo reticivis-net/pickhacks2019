@@ -13,10 +13,14 @@ if (!isset($_SESSION['probability'])) {
     </head>
     <body>
         <?php
-            if $_SESSION['probability'] == 'none' {
+            if ($_SESSION['probability'] == 'none') {
                 echo '<h1 style="color:green"><strong>Congradulations, you are in no danger of red-s or nutritional difficency disorder</strong></h1>';
                 echo 'If you would like to learn more about this and want to help the cause to fight red-s and nutritional difficency disorders please have a look at some of the websites below';
             }
+            if ($_SESSION['probability'] == 'low') {
+                echo '<h1 style="color:yellow"><strong>You are at rist for RED-S and or nutritional diffency disorders. You have shown some of the signs of this and should look into this further. THere are several links below to get you started. But remember, there is no substitute for a proper examination</strong></h1>'
+            }
+
         ?>
         <ul>
             <li><a href="https://bjsm.bmj.com/content/48/7/491">BMJ's article abour RED-S</a></li>

@@ -28,19 +28,19 @@ if (isset($_POST['finished'])) {
         $var3 = $last_line[2];
         $var4 = $last_line[3];
         $var5 = $last_line[4];
-        if $var5 == 1 {
+        if ($var5 == 1) {
             $_SESSION['probability'] = 'absolute';
         }
-        elseif $var4 == 1 {
+        elseif ($var4 == 1) {
             $_SESSION['probability'] = 'high';
         }
-        elseif $var3 == 1{
+        elseif ($var3 == 1){
             $_SESSION['probability'] = 'medium';
         }
-        elseif $var2 == 1 {
+        elseif ($var2 == 1) {
             $_SESSION['probability'] = 'low';
         }
-        elseif $var1 == 1 {
+        elseif ($var1 == 1) {
             $_SESSION['probability'] = 'none';
         }
         echo '<meta http-equiv="Refresh" CONTENT="0; URL=/results">';
