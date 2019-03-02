@@ -122,8 +122,8 @@ include '../header.php';
     <div class="container">
         <h1>Welcome to asobey.</h1>
         <h3>Please fill out the form below.</h3>
-        <ul>
-            <li>Do you have any history of the following medical conditions? (Check all that apply)
+        <ul class="list-group">
+            <li class="list-group-item">Do you have any history of the following medical conditions? (Check all that apply)
                 <br>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="input0" name="0" value="1">
@@ -166,7 +166,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input9">Gastrointestinal problems</label>
                 </div>
             </li>
-            <li>Have you ever experienced unexpected decreased endurance performace?
+            <li class="list-group-item">Have you ever experienced unexpected decreased endurance performace?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input10yes" name="10" class="custom-control-input" value="1" required>
@@ -177,7 +177,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input10no">No</label>
                 </div>
             </li>
-            <li>Do you receive injuries from seemingly harmless things?
+            <li class="list-group-item">Do you receive injuries from seemingly harmless things?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input11yes" name="11" class="custom-control-input" value="1" required>
@@ -188,7 +188,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input11no">No</label>
                 </div>
             </li>
-            <li>Have you been receiving less benefeit from exercise?
+            <li class="list-group-item">Have you been receiving less benefeit from exercise?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input12yes" name="12" class="custom-control-input" value="1" required>
@@ -199,7 +199,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input12no">No</label>
                 </div>
             </li>
-            <li>Have you experienced unusual impaired judgement?
+            <li class="list-group-item">Have you experienced unusual impaired judgement?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input13yes" name="13" class="custom-control-input" value="1" required>
@@ -210,7 +210,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input13no">No</label>
                 </div>
             </li>
-            <li>Have you encountered decreased coordination?
+            <li class="list-group-item">Have you encountered decreased coordination?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input14yes" name="14" class="custom-control-input" value="1" required>
@@ -221,7 +221,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input14no">No</label>
                 </div>
             </li>
-            <li>Have you encountered decreased concentration?
+            <li class="list-group-item">Have you encountered decreased concentration?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input15yes" name="15" class="custom-control-input" value="1" required>
@@ -232,7 +232,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input15no">No</label>
                 </div>
             </li>
-            <li>Have you been easily irratible lately?
+            <li class="list-group-item">Have you been easily irratible lately?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input16yes" name="16" class="custom-control-input" value="1" required>
@@ -243,7 +243,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input16no">No</label>
                 </div>
             </li>
-            <li>Have you experienced signs of depression lately?
+            <li class="list-group-item">Have you experienced signs of depression lately?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input17yes" name="17" class="custom-control-input" value="1" required>
@@ -254,7 +254,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input17no">No</label>
                 </div>
             </li>
-            <li>Have you become easily tired recently?
+            <li class="list-group-item">Have you become easily tired recently?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input18yes" name="18" class="custom-control-input" value="1" required>
@@ -265,7 +265,7 @@ include '../header.php';
                     <label class="custom-control-label" for="input18no">No</label>
                 </div>
             </li>
-            <li>Have you become noticeably weak lately?
+            <li class="list-group-item">Have you become noticeably weak lately?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="input19yes" name="19" class="custom-control-input" value="1" required>
