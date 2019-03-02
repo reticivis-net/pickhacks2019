@@ -45,14 +45,9 @@
         <h2>What does it do?</h2>
         <p>It is a Neural Network that has been trained on over 10,000 different symptoms and previous illnesses to help athletes find out if they are at risk for certain dangerous and preventable diseases.</p>
         <h2>How was it built?</h2>
-        <p>We used python 3.7 in order to create a neural network, and then trained it on data found from several health organizations(including Aspetar and BMJ). </p>
-        <h2>What is this website?</h2>
-        <p>Copy and paste these h2 and p elements for every topic. examples: "what is this" "how do i sign up" "what does it do" "how does it work". this can be copied to devpost.</p>
-        <h2>What is this website?</h2>
-        <p>Copy and paste these h2 and p elements for every topic. examples: "what is this" "how do i sign up" "what does it do" "how does it work". this can be copied to devpost.</p>
-        <h2>What is this website?</h2>
-        <p>Copy and paste these h2 and p elements for every topic. examples: "what is this" "how do i sign up" "what does it do" "how does it work". this can be copied to devpost.</p>
-
+        <p>We used Python 3.7 in order to create a neural network, and then trained it on data found from several health organizations(including Aspetar and BMJ). </p>
+        <h2>What's next for Asobey?</h2>
+        <p>Adding more functions to help other members around the sports scene in order to provide more help for everyone!</p>
     </div>
 </div>
 <script>
