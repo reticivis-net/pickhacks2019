@@ -170,11 +170,35 @@ html {
     margin:20px;
 }
 #sign-in{
-    background-image: url('LibraryTransparent.png');
-    height: 70px;
-    width: 120px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-image: url('data/sign-in-normal.png');
+    height: 105px;
+    width: 184px;
 }
 
 #sign-in:hover {
-    background-image: url('LibraryHoverTrans.png');
+    background-image: url('data/sign-in-hover.png');
+}
+#sign-up{
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-image: url('data/sign-up-normal.png');
+    height: 105px;
+    width: 210px;
+}
+
+#sign-up:hover {
+    background-image: url('data/sign-up-hover.png');
+}
+.button {
+    margin:20px;
+    display:inline-block;
+}
+@media only screen and (max-width: 800px) {
+    .header-image {
+        width: 80%;
+    }
 }

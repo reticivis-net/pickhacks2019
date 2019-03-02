@@ -73,8 +73,8 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
     <head>
         <?php
         $root = "..";
-        $title = "nnthingy - Sign Up";
-        $desc = "Sign Up for nnthingy";
+        $title = "asobey - Sign Up";
+        $desc = "Sign Up for asobey";
         include $root.'/header.php';
         ?>
         <title>priory.ml</title> <!-- fallback title -->
@@ -82,9 +82,8 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
     <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-            <!--<img src="/data/full name.png" alt="logo" style="height:40px;">-->
-            <h2>nnthingy</h2>
+        <a class="navbar-brand" href="/">
+            <img src="/data/cropped.png" alt="logo" style="height:40px;">
         </a>
 
         <!-- Links -->
@@ -120,7 +119,7 @@ if(isset($_POST['first_name']) && !empty($_POST['first_name']) AND isset($_POST[
             <?php
         }
         ?>
-        <h1>Fill out the form below to sign up for nnthingy</h1>
+        <h1>Fill out the form below to sign up for asobey</h1>
         <br>
         <form role="form" action="./" method="POST" id="register" onsubmit="load()">
             <div class="form-group">

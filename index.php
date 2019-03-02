@@ -5,7 +5,7 @@
     define("IN_VIEW",true); // sets document as valid
     $root = $_SERVER['DOCUMENT_ROOT'];
     $root = ".";
-    $title = "nnthingy";
+    $title = "asobey";
     $desc = "Homepage.";
     include $root.'/header.php';
     ?>
@@ -21,7 +21,7 @@
 <div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('data/oui.png');">
         <span class="vertical-align2 animated fadeIn">
             <br>
-            <img alt="icon" src="/data/cropped.png" width="50%">
+            <img alt="icon" src="/data/cropped.png" class="header-image" width="50%">
             <br>
             <span class="h2 quicksand">a synthetic organic brain exploring you</span>
             <br>
@@ -34,7 +34,8 @@
             <span>
                 <span class="h1" style="color:black;">Please Sign Up or Sign In.</span>
                 <br>
-                <button type="button" class="btn btn-primary btn-xl" onclick="window.location.href='/sign-in/';">Sign In</button> <button type="button" class="btn btn-success btn-xl" onclick="window.location.href='/sign-up/';">Sign Up</button>
+                <!--<button type="button" class="btn btn-primary btn-xl" onclick="window.location.href='/sign-in/';">Sign In</button> <button type="button" class="btn btn-success btn-xl" onclick="window.location.href='/sign-up/';">Sign Up</button>-->
+                <a href="/sign-up"><div id="sign-up" class="button"></div></a><a href="/sign-in"><div class='button' id="sign-in"></div></a>
             </span>
         </div>
         <h1>FAQ</h1>
@@ -47,6 +48,21 @@
     $('.jarallax').jarallax({
         speed: 0.2
     });
+</script>
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    let images = [];
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i]
+        }
+    }
+    preload(
+        "data/sign-up-hover",
+        "data/sign-in-hover"
+    )
+    //--><!]]>
 </script>
 </body>
 </html>

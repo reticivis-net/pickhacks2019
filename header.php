@@ -11,7 +11,7 @@ if (!isset($root)) {
 ?>
 
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="shortcut icon" href="data/fcropped.png"/>
     <title><?php echo $title;?></title>
     <!-- meta -->
     <meta name="nnthingy" content="<?php echo $desc; ?>"/>
