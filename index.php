@@ -9,7 +9,7 @@
     $desc = "Homepage.";
     include $root.'/header.php';
     ?>
-    <title>Asobey!</title>
+    <title>Asobey</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="/static/aos.css" rel="stylesheet">
     <script src="/static/aos.js"></script>
@@ -23,7 +23,7 @@
             <br>
             <img alt="icon" src="/data/cropped.png" class="header-image" width="50%">
             <br>
-            <span class="h2 quicksand">a synthetic organic brain exploring you</span>
+            <span class="h2 quicksand">a synthetic organic brain educating you</span>
             <br>
             <a class="no-a-style" href="#start"><span class="h1 animated fadeInUp delay-1s slow"><i class="fas fa-angle-down"></i></span></a>
         </span>

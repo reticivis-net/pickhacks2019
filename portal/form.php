@@ -17,7 +17,7 @@ if (isset($_POST['finished'])) {
         $num8 = $symptomQuestions[7];
         $num9 = $symptomQuestions[8];
         $num10 = $symptomQuestions[9];
- 
+
         $last_line = system('python C:/xampp/htdocs/pickhacks2019/NeuralNetwork.py "r" "10" "'.$num1.'" "'.$num2.'" "'.$num3.'" "'.$num4.'" "'.$num5.'" "'.$num6.'" "'.$num7.'" "'.$num8.'" "'.$num9.'" "'.$num10.'"', $retval);
         //var_dump($last_line);
     }
@@ -107,7 +107,7 @@ include '../header.php';
         <h1>Welcome to asobey.</h1>
         <h3>Please fill out the form below.</h3>
         <ul class="list-group">
-            
+
             <li class="list-group-item">Have you ever experienced unexpected decreased endurance performace?
                 <br>
                 <div class="custom-control custom-radio custom-control-inline">
