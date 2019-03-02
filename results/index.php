@@ -22,7 +22,8 @@ if (!isset($_SESSION['probability'])) {
             <li><a href="https://bjsm.bmj.com/content/48/7/491">BMJ's article abour RED-S</a></li>
             <li><a href="http://www.aspetar.com/journal/viewarticle.aspx?id=260#.XHpg_YhKhPY">Aspetar's article of RED-S and Nutritional deficency disorder</a></li>
             <li><a href="https://blogs.bmj.com/bjsm/2014/08/03/the-7-most-common-injuries-and-illnesses-seen-at-major-multisport-games/">BMJ's article about common illnesses in high level athletics</a></li>
-            
+            <li><a href="https://www.olympic.org/medical-and-scientific-commission">The olympic site to help educate people about athletic health issues</a></li>
+            <li><a href="https://www.eatingdisorderhope.com/">An organization devoted to helping people with eating disorders</a></li>
         </ul>
     </body>
 </html>
