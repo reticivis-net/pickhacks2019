@@ -41,8 +41,7 @@ if (!isset($_SESSION['probability'])) {
                 $color = "#bb0a1e";
                 $desc = "There can be mistakes but this only happens very very rarely. Please have a look at some of the links below and consult a doctor immediately.";
             }
-            echo '<h1 class="fade-in">'.$header.'</h1><div class="fade-in" style="height:10px;width:100%;background:'.$color.';border-radius:5px;margin:10px 0;"></div><p style="font-size:18px;" class="fade-in">'.$desc.'</p>'
-
+            echo '<h1 class="fade-in">'.$header.'</h1><div class="fade-in" style="height:10px;width:100%;background:'.$color.';border-radius:5px;margin:10px 0;"></div><p style="font-size:18px;" class="fade-in">'.$desc.'</p>';
         ?>
         <ul>
             <li class="fade-in"><a href="https://bjsm.bmj.com/content/48/7/491">BMJ's article abour RED-S</a></li>
@@ -52,7 +51,10 @@ if (!isset($_SESSION['probability'])) {
             <li class="fade-in"><a href="https://www.eatingdisorderhope.com/">An organization devoted to helping people with eating disorders</a></li>
         </ul>
         <br>
-        <button type="button" class="btn btn-light fade-in" data-toggle="tooltip" data-placement="top" title="Are you sure? This will clear your current data.">Re-do form</button>
+        <button type="button" class="btn btn-light fade-in" data-toggle="tooltip" data-placement="top" title="Are you sure? This will clear your current data." onclick="window.location.replace('redo-form.php');">Re-do form</button>
+        <button type="button" class="btn btn-light fade-in" data-toggle="tooltip" data-placement="top" onclick="window.location.replace('/');">Go home</button>
+        <button type="button" class="btn btn-light fade-in" data-toggle="tooltip" data-placement="top" onclick="window.location.replace('/logout.php');">Logout</button>
+
         <script>
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()

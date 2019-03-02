@@ -12,8 +12,7 @@ $userdata = json_decode($userdata, true);
 if ($userdata["finished"] === "true") {
     header("Location: ../");
 } else {
-if (isset($_POST)) {
-    echo "12";
+if (isset($_POST['10'])) {
     $medicalQuestions = [];
     $lm = 10;
     for ($i = 0; $i < $lm; $i++) {
