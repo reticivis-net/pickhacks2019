@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <?php
 if (isset($_POST['finished'])) {
-  $medicalQuestions = []
+  $medicalQuestions = [];
   $l = 10;
-  for $i = 0; $i < $l; $i++ {
-    if(isset($_POST[$i])) $medicalQuestions($i) = 1;
-    else $medicalQuestions($i) = 0;
+  for ($i = 0; $i < $l; $i++) {
+    if(isset($_POST[$i])) {
+      $medicalQuestions[$i] = 1;
+    }
+    else $medicalQuestions[$i] = 0;
   }
-  $symptomQuestions = []
+  $symptomQuestions = [];
   $l = 10;
-  for $i = 0; $i < $l; $i++ {
-    $symptomQuestions[$i] = $_POST[$i + 10]
+  for ($i = 0; $i < $l; $i++) {
+    $symptomQuestions[$i] = $_POST[$i + 10];
   }
+  //var_dump($symptomQuestions);
+  //echo '<br>';
+  //var_dump($medicalQuestions);
 }
 ?>
 <html>
