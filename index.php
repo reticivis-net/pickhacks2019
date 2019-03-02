@@ -5,7 +5,7 @@
     define("IN_VIEW",true); // sets document as valid
     $root = $_SERVER['DOCUMENT_ROOT'];
     $root = ".";
-    $title = "priory.ml";
+    $title = "nnthingy";
     $desc = "Homepage.";
     include $root.'/header.php';
     ?>
@@ -21,9 +21,9 @@
 <div class="portfolio-header jarallax jumbotron text-center" style="background-image: url('https://www.wonderplugin.com/videos/demo-image0.jpg');">
         <span class="vertical-align2 animated fadeIn">
             <br><br>
-            <span class="h1 quicksand-bold">priory.ml</span>
+            <span class="h1 quicksand-bold">nnthingy</span>
             <br>
-            <span class="h2 quicksand">A website made by a Priory student for Priory students</span>
+            <span class="h2 quicksand">this is ok</span>
             <br>
             <a class="no-a-style" href="#start"><span class="h1 animated fadeInUp delay-1s slow"><i class="fas fa-angle-down"></i></span></a>
         </span>
