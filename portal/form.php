@@ -30,7 +30,7 @@ if (isset($_POST)) {
     }
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
     $result = $conn->query("INSERT INTO users (userdata) VALUES ('$userdata')");
-        if ($result === TRUE) { // if the DB insertion worked successfully
+        //if ($result === TRUE) { // if the DB insertion worked successfully
 
 
 
