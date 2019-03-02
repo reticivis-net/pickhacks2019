@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url("./data/Quicksand-Bold.otf");
+}
+@font-face {
+    font-family: Quicksand;
+    src: url("./data/Quicksand-Regular.otf");
+}
+
 .row {
     margin:auto;
 }
