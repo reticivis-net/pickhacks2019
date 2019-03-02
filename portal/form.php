@@ -14,7 +14,7 @@ if ($userdata["finished"] === "true") {
 } else {
 
 
-if (isset($_POST)) {
+if (isset($_POST['finished'])) {
     $medicalQuestions = [];
     $lm = 4;
     for ($i = 0; $i < $lm; $i++) {
@@ -28,16 +28,17 @@ if (isset($_POST)) {
     for ($i = 0; $i < $ls; $i++) {
         $symptomQuestions[$i] = $_POST[$i + $lm];
     }
+    var_dump($symptomQuestions);
     $userdata = json_encode(array_merge(array_merge($medicalQuestions, $symptomQuestions), $userdata));
     $result = $conn->query("INSERT INTO users (userdata) VALUES ('$userdata')");
-        //if ($result === TRUE) { // if the DB insertion worked successfully
+        if ($result === TRUE) { // if the DB insertion worked successfully
 
 
 
     //var_dump($symptomQuestions);
     //echo '<br>';
     //var_dump($medicalQuestions);
-}
+}}
 include '../header.php';
 ?>
 <html>
@@ -117,7 +118,7 @@ include '../header.php';
                 </div>
             </li>
             <br>
-            <button type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
+            <button name="finished" type="submit" form="questionnaire" value="Submit" class="btn btn-info" id="button">
                 Submit
             </button>
         </ul>
