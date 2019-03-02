@@ -151,7 +151,7 @@ if (isset($_POST['finished'])) {
   </form>
   -->
     <div class="container">
-        <h1>Welcome to asobey.</h1>
+        <h1>Welcome to Asobey!</h1>
         <h3>Please fill out the form below.</h3>
         <ul class="list-group">
 
