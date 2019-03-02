@@ -13,6 +13,7 @@ if (!isset($_SESSION['probability'])) {
     </head>
     <body>
         <?php
+        var_dump($_SESSION['probability']);
             if ($_SESSION['probability'] == 'none') {
                 echo '<h1 style="color:green"><strong>Congradulations, you are in no danger of red-s or nutritional difficency disorder</strong></h1>';
                 echo 'If you would like to learn more about this and want to help the cause to fight red-s and nutritional difficency disorders please have a look at some of the websites below';
