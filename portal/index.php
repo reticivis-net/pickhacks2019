@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['probability'] = "absolute";
+//$_SESSION['probability'] = "absolute";
 if (!isset($_SESSION['email'])) {
     header("Location: /");
 } else {

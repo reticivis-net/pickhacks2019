@@ -45,7 +45,7 @@ if (isset($_POST['finished'])) {
             $_SESSION['prediction'] = 'none';
         }
         else {
-            $_SESSION['prediction'] = 'error';
+            $_SESSION['prediction'] = 'low';
         }
 
         echo '<meta http-equiv="refresh" content="0; URL=/results">';

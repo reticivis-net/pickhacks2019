@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if (!isset($_SESSION['probability'])) {
+if (!isset($_SESSION['prediction'])) {
     header('Location: ' . '/portal');
 }
 ?>
@@ -16,27 +16,27 @@ if (!isset($_SESSION['probability'])) {
             $header = "An error has occured.";
             $color = "black";
             $desc = "Check results/index.php";
-            if ($_SESSION['probability'] == 'none') {
+            if ($_SESSION['prediction'] == 'none') {
                 $header = "Congratulations, you are in no danger of red-s or nutritional deficiency disorder.";
                 $color = "green";
                 $desc = "If you would like to learn more about this and want to help the cause to fight red-s and nutritional deficiency disorders please have a look at some of the websites below.";
             }
-            if ($_SESSION['probability'] == 'low') {
+            if ($_SESSION['prediction'] == 'low') {
                 $header = "You are at risk for RED-S and or nutritional deficiency disorders.";
                 $color = "yellow";
                 $desc = "You have shown some of the signs of this and should look into this further. THere are several links below to get you started. But remember, there is no substitute for a proper examination";
             }
-            if ($_SESSION['probability'] == 'medium') {
+            if ($_SESSION['prediction'] == 'medium') {
                 $header = "You are at risk for RED-S and or nutritional deficiency disorders.";
                 $color = "orange";
                 $desc = "You have shown several of the signs of this and should look into RED-S and nutritional deficiency disorders immediately. You should also consider consulting with a doctor.";
             }
-            if ($_SESSION['probability'] == 'high') {
+            if ($_SESSION['prediction'] == 'high') {
                 $header = "You have shown almost all of the signs of RED-S and nutritional deficiency disorder.";
                 $color = "red";
                 $desc = "Please consult a doctor immediately. There are also several links listed below for more information";
             }
-            if ($_SESSION['probability'] == 'absolute') {
+            if ($_SESSION['prediction'] == 'absolute') {
                 $header = "<b>asobey</b> is absolutely certain that you have RED-S and nutritional deficiency disorder.";
                 $color = "#bb0a1e";
                 $desc = "There can be mistakes but this only happens very very rarely. Please have a look at some of the links below and consult a doctor immediately.";
